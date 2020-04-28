@@ -1,5 +1,9 @@
-section {
+#product-overview {
   background-color: #ff1b68;
+}
+
+.section-title {
+  color: #2df52d;
 }
 
 h1 {
