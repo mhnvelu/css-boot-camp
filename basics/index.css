@@ -1,9 +1,13 @@
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0px;
 }
 
 #product-overview {
   background-color: #ff1b68;
+  padding: 20px;
+  border: 5px black solid;
+  margin: 20px;
 }
 
 /* Inheritance */
@@ -20,4 +24,8 @@ body {
 
 h1 {
   font-family: sans-serif;
+}
+
+.register {
+  margin: 30% 50%;
 }
