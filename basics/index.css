@@ -71,6 +71,8 @@ h1 {
   display: inline-block;
   margin: 0 16px;
   font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .main-nav__item a {
@@ -93,6 +95,7 @@ h1 {
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
+  border-bottom: 5px solid white;
 }
 
 /* Pseudo element */
