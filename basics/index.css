@@ -103,3 +103,19 @@ p::first-letter {
   color: red;
   font-size: 20px;
 }
+
+/* .main-nav__item a and  .main-nav__item--cta a results in same specificity.
+so, the order in which they are decalred decides the result*/
+.main-nav__item--cta a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
