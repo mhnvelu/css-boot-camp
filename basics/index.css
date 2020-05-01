@@ -78,12 +78,19 @@ h1 {
   color: #0e4f1f;
 }
 
-/* Pseudo class */
+/* Pseudo class
 .main-nav__item a:hover {
   color: white;
 }
 
-/* Pseudo class */
+ Pseudo class 
+.main-nav__item a:active {
+  color: white;
+} 
+*/
+
+/* Grouping of rules */
+.main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
 }
