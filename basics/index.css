@@ -12,8 +12,6 @@ body {
   width: 100%;
   height: 500px;
   padding: 10px;
-  margin: 10px;
-  border: 5px yellow solid;
 }
 
 /* Inheritance */
@@ -34,4 +32,30 @@ h1 {
 
 .register {
   margin: 30% 50%;
+}
+
+.main-header {
+  background-color: #2df52d;
+  width: 100%;
+  padding: 20px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 55px);
+}
+
+.main-brand {
+  display: inline-block;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
 }
