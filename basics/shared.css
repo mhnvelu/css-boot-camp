@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+/* Button */
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  padding: 8px;
+  border: 1.5px solid #0e4f1f;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: white;
+  color: #0e4f1f;
+}
+
+/* Check dev tools in browser */
+.button:focus {
+  outline: none;
+}
+
+/* Header Section */
+.main-header {
+  background-color: #2df52d;
+  width: 100%;
+  padding: 20px;
+}
+
+/* display property */
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* font color, weight, size */
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 16px;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+}
+
+/* Pseudo class
+  .main-nav__item a:hover {
+    color: white;
+  }
+  
+   Pseudo class 
+  .main-nav__item a:active {
+    color: white;
+  } 
+  */
+
+/* Grouping of rules */
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+/* Pseudo element
+  p::first-letter {
+    color: red;
+    font-size: 20px;
+  } */
+
+/* .main-nav__item a and  .main-nav__item--cta a results in same specificity.
+  so, the order in which they are decalred decides the result*/
+.main-nav__item--cta a {
+  color: white;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background-color: white;
+  border: none;
+}
+
+/* Footer Section */
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
