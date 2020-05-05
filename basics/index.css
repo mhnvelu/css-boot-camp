@@ -10,14 +10,8 @@ body {
 #product-overview {
   background: url("freedom.jpg");
   width: 100%;
-  height: 500px;
+  height: 550px;
   padding: 10px;
-}
-
-/* Inheritance */
-.section-title {
-  color: #2df52d;
-  font-family: inherit;
 }
 
 /* Combinators */
@@ -98,11 +92,11 @@ h1 {
   border-bottom: 5px solid white;
 }
 
-/* Pseudo element */
+/* Pseudo element
 p::first-letter {
   color: red;
   font-size: 20px;
-}
+} */
 
 /* .main-nav__item a and  .main-nav__item--cta a results in same specificity.
 so, the order in which they are decalred decides the result*/
@@ -118,4 +112,161 @@ so, the order in which they are decalred decides the result*/
   color: #ff1b68;
   background-color: white;
   border: none;
+}
+
+/* Plans Section */
+
+/* Inheritance */
+.section-title {
+  color: #2df52d;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+#plans {
+  background-color: rgb(250, 250, 250);
+}
+
+.plan {
+  display: inline-block;
+  background-color: #d5ffdc;
+  margin: 8px;
+  padding: 16px;
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.plan-highlighted {
+  background-color: #19b84c;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+  background: white;
+  color: #2df52d;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+}
+
+.plan-highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan-highlighted .plan__title {
+  color: white;
+}
+
+.plan__features {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.plan__features li {
+  margin: 8px 0;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  padding: 8px;
+  border: 1.5px solid #0e4f1f;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: white;
+  color: #0e4f1f;
+}
+
+/* Check dev tools in browser */
+.button:focus {
+  outline: none;
+}
+
+/* Features section */
+
+#features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+  text-align: center;
+}
+
+#features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.feature-image {
+  background-color: #ffcede;
+  border-radius: 50%;
+  border: 2px solid #424242;
+  width: 128px;
+  height: 128px;
+  margin: auto;
+}
+
+.feature-description {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Footer Section */
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
 }
