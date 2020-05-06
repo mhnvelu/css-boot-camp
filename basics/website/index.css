@@ -1,17 +1,25 @@
 /* Overview section */
 #product-overview {
-  background: url("freedom.jpg");
+  background: url("./images/freedom.jpg") left 10% top 60% / cover no-repeat
+    border-box border-box;
+  /* background-image: url("freedom.jpg");
+  background-size: cover;
+  background-position: left 10% top 60%;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+  border: 5px dashed red; */
   width: 100%;
-  height: 528px;
+  height: 850px;
   padding: 10px;
   position: relative;
-  margin-top: 43px;
+  margin-top: 48px;
 }
 
 /* Combinators */
 #product-overview h1 {
   color: white;
-  font-family: fantasy;
+  font-family: "Anton", sans-serif;
   position: absolute;
   bottom: 5%;
   left: 3%;

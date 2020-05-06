@@ -51,6 +51,14 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+}
+
+.main-header__brand img {
+  height: 100%;
+  width: 100%;
 }
 
 .main-nav {
