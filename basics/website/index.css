@@ -2,14 +2,19 @@
 #product-overview {
   background: url("freedom.jpg");
   width: 100%;
-  height: 550px;
+  height: 528px;
   padding: 10px;
+  position: relative;
+  margin-top: 43px;
 }
 
 /* Combinators */
 #product-overview h1 {
   color: white;
   font-family: fantasy;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
 }
 
 h1 {
