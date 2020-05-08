@@ -1,6 +1,6 @@
 /* Overview section */
 #product-overview {
-  background: url("./images/freedom.jpg") left 10% top 60% / cover no-repeat
+  background: url("./images/freedom.jpg") left 10% bottom 75% / cover no-repeat
     border-box border-box;
   /* background-image: url("freedom.jpg");
   background-size: cover;
@@ -22,8 +22,8 @@
   /* Radial Gradient */
   /* background-image: radial-gradient(40px 40px at 20% 50%, red, blue, green); */
 
-  width: 100%;
-  height: 850px;
+  width: 100vw;
+  height: 65vh;
   padding: 0.625rem;
   position: relative;
   margin-top: 3rem;
@@ -56,9 +56,9 @@ h1 {
   text-align: center;
 }
 
-#plans {
+/* #plans {
   background-color: rgb(250, 250, 250);
-}
+} */
 
 .plan-list {
   width: 80%;
