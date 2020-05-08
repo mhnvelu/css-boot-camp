@@ -1,5 +1,5 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .background {
@@ -15,7 +15,7 @@ main {
   width: 80%;
   border: 4px solid #0e4f1f;
   border-left: none;
-  margin: 20px 0;
+  margin: 2rem 0;
   position: relative;
   z-index: 0;
 }
@@ -23,7 +23,7 @@ main {
 .packages-section__link {
   text-decoration: none;
   display: block;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .packages-section__title {
@@ -34,11 +34,11 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: white;
   background: #ff5454;
-  padding: 8px;
-  margin: 20px;
+  padding: 0.5rem;
+  margin: 1.25rem;
 }
 
 .packages-section__title--annotation {
@@ -48,8 +48,8 @@ main {
 .packages-section__description {
   color: #0e4f1f;
   border: 1px solid #0e4f1f;
-  padding: 16px;
-  font-size: 20px;
+  padding: 1rem;
+  font-size: 1.25rem;
   background-color: white;
 }
 
