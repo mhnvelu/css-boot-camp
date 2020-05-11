@@ -90,3 +90,20 @@ main {
 #premium .packages-section__title--annotation {
   color: #bbb;
 }
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem auto;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .packages-section {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+}
