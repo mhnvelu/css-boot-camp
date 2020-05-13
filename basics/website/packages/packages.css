@@ -1,3 +1,17 @@
+/* Importing our own custom fonts */
+@font-face {
+  font-family: "AnonymousPro";
+  src: url(anonymousPro-Regular.ttf) format("truetype");
+}
+
+/* font weight should be provided to distinguish 2 font faces of same font-family.
+If font-weight is not  provided, then the font-face which is mentioned last in the file will alone get loaded*/
+@font-face {
+  font-family: "AnonymousPro";
+  src: url(anonymousPro-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
 main {
   padding-top: 2rem;
 }
@@ -51,6 +65,7 @@ main {
   padding: 1rem;
   font-size: 1.25rem;
   background-color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .packages-section:hover {
