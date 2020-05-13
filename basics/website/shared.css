@@ -50,6 +50,14 @@ main {
   outline: none;
 }
 
+/* This styling will override the hover style above */
+.button[disabled] {
+  cursor: not-allowed;
+  border-color: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 /* Header Section */
 .main-header {
   background-color: #2ddf5c;
