@@ -43,6 +43,8 @@ body {
   margin: 10px;
   width: 250px;
   font-size: 1.8rem;
+  align-self: flex-end;
+  flex-basis: 300px;
 }
 
 .item-3 {
@@ -52,6 +54,7 @@ body {
   border: 5px solid black;
   margin: 10px;
   height: 250px;
+  flex-shrink: 0;
 }
 
 .item-4 {
@@ -62,6 +65,8 @@ body {
   margin: 10px;
   width: 300px;
   height: 300px;
+  order: -1;
+  flex-basis: auto;
 }
 
 .item-5 {
@@ -71,6 +76,7 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 250px;
+  flex-grow: 2;
 }
 
 .item-6 {
@@ -80,4 +86,5 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 250px;
+  flex-grow: 3;
 }
