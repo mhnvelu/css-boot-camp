@@ -11,7 +11,7 @@
    */
 
   /* Named Lines */
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, [col-start] 25% [col-end]);
   grid-template-rows:
     [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 300px)
     [row-2-end];
@@ -67,4 +67,6 @@
 
 .el4 {
   background: rgba(0, 4, 255, 0.5);
+  grid-column: col-start 1 / col-end 1;
+  grid-row: row-2-start / row-2-end;
 }
