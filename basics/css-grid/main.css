@@ -15,10 +15,20 @@
   grid-template-rows:
     [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 300px)
     [row-2-end];
+
+  /* Grid template areas */
+  grid-template-areas: "r1-c1 r1-c2 ele3 ele3" "r2-c1 r2-c2 ele3 ele3";
+
+  /* Grid gap */
+  /* grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  grid-gap: 5px / 10px; */
+  grid-gap: 5px;
 }
 
 .el1 {
   background: rgba(255, 154, 72, 0.5);
+  grid-area: r1-c1;
 }
 
 .el2 {
@@ -32,22 +42,27 @@
 
 .el3 {
   background: rgba(0, 128, 0, 0.5);
-  grid-column-start: 3;
+  /* grid-column-start: 3; */
   /* grid-column-end: 5; */
-  grid-column-end: span 2;
+
+  /* Using span */
+  /* grid-column-end: span 2; */
 
   /* grid-row-start: 1;
   grid-row-end: 3; */
 
   /* Using named rows */
-  grid-row-start: row-1-start;
-  grid-row-end: row-2-end;
+  /* grid-row-start: row-1-start;
+  grid-row-end: row-2-end; */
 
   /* short hand for row */
   /* grid-row: row-1-start / row-2-end; */
 
   /* shorthand for row and column*/
   /* grid-area: row-1-start / 3 / row-2-end / span 2; */
+
+  /* Using grid area */
+  grid-area: ele3;
 }
 
 .el4 {
