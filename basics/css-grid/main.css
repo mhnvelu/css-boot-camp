@@ -61,7 +61,7 @@
   /* shorthand for row and column*/
   /* grid-area: row-1-start / 3 / row-2-end / span 2; */
 
-  /* Using grid area */
+  /* Using grid area referring  Grid template areas*/
   grid-area: ele3;
 }
 
