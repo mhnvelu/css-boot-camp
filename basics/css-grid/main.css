@@ -24,11 +24,21 @@
   grid-row-gap: 10px;
   grid-gap: 5px / 10px; */
   grid-gap: 5px;
+
+  /* Align elements */
+  /* justify-items: center;
+  align-items: center; */
+
+  /* Position Entire Grid content */
+  /* justify-content: center;
+  align-content: center; */
 }
 
 .el1 {
   background: rgba(255, 154, 72, 0.5);
   grid-area: r1-c1;
+  justify-self: center;
+  align-self: center;
 }
 
 .el2 {
