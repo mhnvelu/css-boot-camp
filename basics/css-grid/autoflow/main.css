@@ -1,7 +1,8 @@
 .container {
   margin: 20px;
   display: grid;
-  grid-template-columns: 15rem 15rem;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  /* grid-template-columns: repeat(auto-fit, 15rem); */
   justify-content: center;
   grid-gap: 1.5rem;
   grid-auto-flow: row;
