@@ -28,10 +28,18 @@
   grid-template-areas: "sidebar main";
 }
 
-.sidebar,
+@media (max-width: 40rem) {
+  .content {
+    grid-template-columns: 100%;
+    grid-template-rows: fit-content(10%) 90%;
+    grid-template-areas: "sidebar" "main";
+  }
+}
+
+/* .sidebar,
 .main-content {
   padding: 14rem 0;
-}
+} */
 
 .sidebar {
   grid-area: sidebar;
