@@ -16,12 +16,16 @@ main {
   max-width: 42rem;
   min-width: 19rem;
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  transform: skewX(5deg) skewY(5deg);
+  overflow: hidden;
 }
 
 .testimonial__image {
   width: 100%;
   height: 100%;
   vertical-align: top;
+  transform: skewX(-5deg) skewY(-5deg);
+  transform: scale(1);
 }
 
 .testimonial__info {
