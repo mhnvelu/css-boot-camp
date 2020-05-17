@@ -6,15 +6,22 @@
 * {
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-areas: "header" "main" "footer";
 }
 
 main {
-  min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.5rem;
+  /* grid-row: 2 / 3; */
+  grid-area: main;
 }
 /* Added backdrop - solution 1 and 2 */
 .backdrop {
@@ -188,6 +195,8 @@ main {
   background: black;
   padding: 2rem;
   margin-top: 3rem;
+  /* grid-row: 3 / 4; */
+  grid-area: footer;
 }
 
 .main-footer__links {
