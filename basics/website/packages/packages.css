@@ -32,6 +32,7 @@ main {
   margin: 2rem 0;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 .packages-section__link {
@@ -52,7 +53,13 @@ main {
   color: white;
   background: #ff5454;
   padding: 0.5rem;
-  margin: 1.25rem;
+  /* margin: 1.25rem; */
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+  width: 12rem;
+  text-align: center;
+
+  /* This is default value. We can change the origin by setting different values. */
+  /* transform-origin: center;  */
 }
 
 .packages-section__title--annotation {
