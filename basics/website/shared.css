@@ -238,7 +238,6 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
-  transition: transform 300ms ease-out !important;
 }
 
 .mobile-nav__items {
@@ -266,6 +265,11 @@ main {
   opacity: 1 !important;
   transform: translateY(0) !important;
   transition: opacity 200ms 1s ease-in, transform 500ms 1s ease-out;
+}
+
+.mobile-nav__open {
+  transform: translateX(0%);
+  transition: transform 300ms ease-out !important;
 }
 
 @media (min-width: 40rem) {

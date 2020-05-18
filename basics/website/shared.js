@@ -22,14 +22,14 @@ if (modalNoButton) {
 
 backdrop.addEventListener("click", () => {
   //   mobileNav.style.display = "none";
-  mobileNav.classList.remove("open");
+  mobileNav.classList.remove("mobile-nav__open");
   closeModal();
 });
 
 toggleButton.addEventListener("click", () => {
   //   mobileNav.style.display = "block";
   //   backdrop.style.display = "block";
-  mobileNav.classList.add("open");
+  mobileNav.classList.add("mobile-nav__open");
   backdrop.classList.add("open");
 });
 
