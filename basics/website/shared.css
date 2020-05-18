@@ -190,6 +190,11 @@ main {
   border: none;
 }
 
+/* Apply animation to cta buttton */
+.main-nav__item--cta {
+  animation: wiggle 200ms 3s 8 alternate;
+}
+
 /* Footer Section */
 .main-footer {
   background: black;
@@ -282,5 +287,15 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* Animating the cta button */
+@keyframes wiggle {
+  from {
+    transform: rotateZ(-10deg);
+  }
+  to {
+    transform: rotateZ(10deg);
   }
 }
