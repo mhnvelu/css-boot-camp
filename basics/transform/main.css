@@ -1,16 +1,27 @@
 .container {
+  position: relative;
   margin: 150px auto;
   border: 1px solid black;
   width: 200px;
   height: 200px;
   perspective: 1000px;
-  perspective-origin: right;
+  perspective-origin: 500px;
 }
 
-.box {
+.box1 {
+  position: absolute;
   background: red;
   width: 100%;
   height: 100%;
   text-align: center;
-  transform: rotateX(45deg) rotateY(10deg) rotateZ(30deg);
+  transform: rotateY(80deg);
+}
+
+.box2 {
+  position: absolute;
+  background: blue;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: translateX(1rem) translateZ(-100rem);
 }
