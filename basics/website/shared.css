@@ -225,7 +225,7 @@ main {
 
 /* Mobile navigation */
 .mobile-nav {
-  display: none;
+  transform: translateX(-100%);
   position: fixed;
   z-index: 101;
   top: 0;
@@ -233,6 +233,7 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
+  transition: transform 300ms ease-out !important;
 }
 
 .mobile-nav__items {
@@ -257,6 +258,9 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 200ms 1s ease-in, transform 500ms 1s ease-out;
 }
 
 @media (min-width: 40rem) {
