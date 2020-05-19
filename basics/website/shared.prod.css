@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Importing google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
@@ -10,6 +17,7 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html {
@@ -19,13 +27,17 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0px;
+  display: -ms-grid;
   display: grid;
   height: 100%;
+  -ms-grid-rows: 3.5rem auto fit-content(8rem);
   grid-template-rows: 3.5rem auto fit-content(8rem);
   grid-template-areas: "header" "main" "footer";
 }
 
 main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   /* grid-row: 2 / 3; */
   grid-area: main;
 }
@@ -86,9 +98,12 @@ main {
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -137,6 +152,8 @@ main {
   display: none;
 }
 .main-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -201,11 +218,14 @@ main {
 
 /* Apply animation to cta buttton */
 .main-nav__item--cta {
+  -webkit-animation: wiggle 400ms 3s 8 none;
   animation: wiggle 400ms 3s 8 none;
 }
 
 /* Footer Section */
 .main-footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   background: black;
   padding: 2rem;
   margin-top: 3rem;
@@ -217,9 +237,18 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -239,6 +268,8 @@ main {
 
 /* Mobile navigation */
 .mobile-nav {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   position: fixed;
   z-index: 101;
@@ -255,9 +286,18 @@ main {
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -272,13 +312,27 @@ main {
 .open {
   display: block !important;
   opacity: 1 !important;
+  -webkit-transform: translateY(0) !important;
+  -ms-transform: translateY(0) !important;
   transform: translateY(0) !important;
+  -webkit-transition: opacity 200ms 1s ease-in,
+    -webkit-transform 500ms 1s ease-out;
+  transition: opacity 200ms 1s ease-in, -webkit-transform 500ms 1s ease-out;
+  -o-transition: opacity 200ms 1s ease-in, transform 500ms 1s ease-out;
   transition: opacity 200ms 1s ease-in, transform 500ms 1s ease-out;
+  transition: opacity 200ms 1s ease-in, transform 500ms 1s ease-out,
+    -webkit-transform 500ms 1s ease-out;
 }
 
 .mobile-nav__open {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
   transform: translateX(0%);
+  -webkit-transition: -webkit-transform 300ms ease-out !important;
+  transition: -webkit-transform 300ms ease-out !important;
+  -o-transition: transform 300ms ease-out !important;
   transition: transform 300ms ease-out !important;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out !important;
 }
 
 @media (min-width: 40rem) {
@@ -288,6 +342,8 @@ main {
   }
   /* Main Nav bar */
   .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -296,22 +352,48 @@ main {
     margin: 0 1rem;
   }
   .main-footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 
 /* Animating the cta button */
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
   }
   50% {
+    -webkit-transform: rotateZ(-10deg);
     transform: rotateZ(-10deg);
   }
   100% {
+    -webkit-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(10deg);
     transform: rotateZ(10deg);
   }
 }
