@@ -113,14 +113,16 @@ body {
         display: block;
         padding: 0.2rem;
         border: $border-default;
+
+        &:hover,
+        &:active {
+            color: white;
+            background: map-get($map: $colors, $key: secondary);
+            border-color: map-get($map: $colors, $key: secondary);
+        }
     }
 
-    .documentation-link:hover,
-    .documentation-link:active {
-        color: white;
-        background: map-get($map: $colors, $key: secondary);
-        border-color: map-get($map: $colors, $key: secondary);
-    }
+
 }
 
 
