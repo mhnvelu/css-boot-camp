@@ -14,8 +14,12 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+
+    flex : {
+        direction: column;
+        wrap: nowrap;
+    }
+
     align-items: center;
     padding: 3rem 0;
     box-sizing: border-box;
@@ -29,10 +33,10 @@ body {
     box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
     width: 90%;
     box-sizing: border-box;
-}
 
-.sass-introduction p {
-    margin: 0;
+    p {
+        margin: 0;
+    }
 }
 
 .sass-details {
@@ -47,11 +51,12 @@ body {
 
 .section-header {
     border-bottom: 0.05rem solid #521751;
+
+    h1 {
+        margin: 0 0 1rem 0;
+    }
 }
 
-.section-header h1 {
-    margin: 0 0 1rem 0;
-}
 
 .documentation-links {
     list-style: none;
@@ -62,27 +67,29 @@ body {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+
+    li {
+        margin: 0.2rem 0;
+        background: white;
+    }
+
+    .documentation-link {
+        text-decoration: none;
+        color: #521751;
+        display: block;
+        padding: 0.2rem;
+        border: 0.05rem solid #521751;
+    }
+
+    .documentation-link:hover,
+    .documentation-link:active {
+        color: white;
+        background: #fa923f;
+        border-color: #fa923f;
+    }
 }
 
-.documentation-links li {
-    margin: 0.2rem 0;
-    background: white;
-}
 
-.documentation-links .documentation-link {
-    text-decoration: none;
-    color: #521751;
-    display: block;
-    padding: 0.2rem;
-    border: 0.05rem solid #521751;
-}
-
-.documentation-links .documentation-link:hover,
-.documentation-links .documentation-link:active {
-    color: white;
-    background: #fa923f;
-    border-color: #fa923f;
-}
 
 @media (min-width: 40rem) {
     html {
