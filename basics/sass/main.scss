@@ -3,6 +3,10 @@
 
 html {
     font-size: 94.75%;
+
+    @media (min-width: 40rem) {
+        font-size: 125%;
+    }
 }
 
 body {
@@ -95,10 +99,6 @@ body {
 
 
 @media (min-width: 40rem) {
-    html {
-        font-size: 125%;
-    }
-
     .container {
         padding: $size-default * 3 0;
     }

@@ -7,6 +7,11 @@
 html {
   font-size: 94.75%;
 }
+@media (min-width: 40rem) {
+  html {
+    font-size: 125%;
+  }
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -84,10 +89,6 @@ body {
 }
 
 @media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
   .container {
     padding: 3rem 0;
   }
