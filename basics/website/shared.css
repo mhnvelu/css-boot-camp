@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:400,700&display=swap");
 
+:root {
+  --dark-green: #0e4f1f;
+  --highlight-color: #ff1b68;
+  --white-color: white;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -42,19 +48,19 @@ main {
 
 /* Button */
 .button {
-  background: #0e4f1f;
-  color: white;
+  background: var(--dark-green);
+  color: var(--white-color);
   font: inherit;
   padding: 0.5rem;
-  border: 1.5px solid #0e4f1f;
+  border: 1.5px solid var(--dark-green);
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .button:hover {
-  background: white;
-  color: #0e4f1f;
+  background: var(--white-color);
+  color: var(--dark-green);
 }
 
 /* Check dev tools in browser */
@@ -92,7 +98,7 @@ main {
 
 /* font color, weight, size */
 .main-header__brand {
-  color: #0e4f1f;
+  color: var(--dark-green);
   text-decoration: none;
   font-weight: bold;
   width: 2.25rem;
@@ -144,7 +150,7 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
-  color: #0e4f1f;
+  color: var(--dark-green);
 }
 
 /* Pseudo class
@@ -161,8 +167,8 @@ main {
 /* Grouping of rules */
 .main-nav__item a:hover,
 .main-nav__item a:active {
-  color: white;
-  border-bottom: 5px solid white;
+  color: var(--white-color);
+  border-bottom: 5px solid var(--white-color);
 }
 
 /* Pseudo element
@@ -175,8 +181,8 @@ main {
   so, the order in which they are decalred decides the result*/
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
-  color: white;
-  background-color: #ff1b68;
+  color: var(--white-color);
+  background-color: var(--highlight-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
@@ -185,8 +191,8 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
-  color: #ff1b68;
-  background-color: white;
+  color: var(--highlight-color);
+  background-color: var(--white-color);
   border: none;
 }
 
@@ -219,7 +225,7 @@ main {
 }
 
 .main-footer__link a {
-  color: white;
+  color: var(--white-color);
   text-decoration: none;
 }
 
@@ -235,7 +241,7 @@ main {
   z-index: 101;
   top: 0;
   left: 0;
-  background: white;
+  background: var(--white-color);
   width: 80%;
   height: 100vh;
 }
